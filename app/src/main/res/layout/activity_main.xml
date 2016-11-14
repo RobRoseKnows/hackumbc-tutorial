@@ -19,7 +19,7 @@
         android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 
     <ListView
-        android:id="@+id/class_list"
+        android:id="@+id/lecture_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/gpa_text"
