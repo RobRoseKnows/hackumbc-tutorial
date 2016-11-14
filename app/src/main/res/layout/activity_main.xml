@@ -11,7 +11,26 @@
     tools:context="com.example.gpacalculator.MainActivity">
 
     <TextView
+        android:id="@+id/gpa_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/current_gpa"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <ListView
+        android:id="@+id/class_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gpa_text"
+        android:layout_above="@+id/create_button"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@id/create_button"
+        android:text="@string/add_new_class"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
 </RelativeLayout>
