@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // TODO: point to the correct views
-        gpaTextView = null;
-        classListView = null;
-        addClassButton = null;
+        gpaTextView = (TextView) findViewById(R.id.gpa_text);
+        classListView = (ListView) findViewById(R.id.class_list);
+        addClassButton = (Button) findViewById(R.id.create_button);
     }
 }
