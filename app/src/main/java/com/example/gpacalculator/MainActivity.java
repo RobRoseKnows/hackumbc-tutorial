@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: point to the correct views
         gpaTextView = (TextView) findViewById(R.id.gpa_text);
-        classListView = (ListView) findViewById(R.id.lecture_list);
+        lectureListView = (ListView) findViewById(R.id.lecture_list);
         addClassButton = (Button) findViewById(R.id.create_button);
 
         ArrayList<String> exampleLecturesList  = (ArrayList<String>) Arrays.asList(exampleLecturesArray);
