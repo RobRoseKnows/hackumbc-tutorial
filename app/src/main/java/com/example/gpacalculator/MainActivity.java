@@ -2,15 +2,23 @@ package com.example.gpacalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView gpaTextView;
     ListView classListView;
     Button addClassButton;
+
+    ArrayAdapter<String> classListAdapter;
+
+    String[] exampleClasses = {"Fencing", "Sailing", "Swiming", "Juggling"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +29,7 @@ public class MainActivity extends AppCompatActivity {
         gpaTextView = null;
         classListView = null;
         addClassButton = null;
+
+        ArrayList<String> exampleClassesList  = (ArrayList<String>) Arrays.asList(exampleClasses);
     }
 }
