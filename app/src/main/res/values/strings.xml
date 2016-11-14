@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">GPA Calculator</string>
-    <string name="current_gpa">Current GPA: %1$d/%2$d</string>
+    <string name="current_gpa">Current GPA: %1$.3d/%2$.1d</string>
     <string name="add_new_class">Add New Class</string>
 </resources>
