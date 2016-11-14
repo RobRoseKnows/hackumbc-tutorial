@@ -1,7 +1,4 @@
-Android Tutorial 2
-==================
-
-# Part 0:
+# Android Tutorial 2
 
 ## 0.1 | Load Project
 
@@ -59,8 +56,6 @@ Android Tutorial 2
 * All this compilation happens when the app is opened for the first time.
 * There's one important file called `R.java` that contains references to where the program can find all the views, resources, etc.
 
-# Part 1:
-
 ## 1.1 | Views
 
 * A [View](https://developer.android.com/reference/android/view/View.html) is an Object that is the super class of all things drawable in Android
@@ -91,9 +86,26 @@ Android Tutorial 2
 
 ```
 gpaTextView = (TextView) findViewById(R.id.gpa_text);
-classListView = (ListView) findViewById(R.id.class_list);
+classListView = (ListView) findViewById(R.id.lecture_list);
 addClassButton = (Button) findViewById(R.id.create_button);
 ```
 
+### 1.1.3 | Create a View
 
+* We create a new XML file to create a View to hold each lecture.
+
+## 2.1 | Working with data 
+
+* Now we're going to populate the ListView with some of our data.
+* We have data already in the form of the `exampleClassesArray` and `exampleClassesList`.
+* We're going to put this into the `classListView` ListView.
+* We need to use an ArrayAdapter
+    - But first we need a View.
+
+### 2.1.1 
+
+```
+ArrayAdapter<String> itemsAdapter = 
+    new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+```
 

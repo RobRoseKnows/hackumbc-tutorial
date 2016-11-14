@@ -13,12 +13,12 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     TextView gpaTextView;
-    ListView classListView;
+    ListView lectureListView;
     Button addClassButton;
 
-    ArrayAdapter<String> classListAdapter;
+    ArrayAdapter<String> lectureListAdapter;
 
-    String[] exampleClasses = {"Fencing", "Sailing", "Swiming", "Juggling"};
+    String[] exampleLecturesArray = {"Fencing", "Sailing", "Swiming", "Juggling"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: point to the correct views
         gpaTextView = null;
-        classListView = null;
+        lectureListView = null;
         addClassButton = null;
 
-        ArrayList<String> exampleClassesList  = (ArrayList<String>) Arrays.asList(exampleClasses);
+        ArrayList<String> exampleLecturesList  = (ArrayList<String>) Arrays.asList(exampleLecturesArray);
+
     }
 }
